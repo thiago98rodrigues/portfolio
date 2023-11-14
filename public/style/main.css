@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+    --principal-color: #E11299;/*FF3D68*/
+    --principal-color-hover: #fa2677;
+    --secundary-color: #190482;
+    --secundary-color-hover: #2e29c0;
+    --axiliar-color: #E9EDEE;
+    --bc-principal-color: #EEF1F6;
+    --bc-auxiliar-color: white;
+}
+
+.main{
+    
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bc-principal-color);
+    color: #212A3E;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+.ops_section{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-color: var(--bc-auxiliar-color);
+    border: 1px solid var(--axiliar-color);
+    border-radius: 1.4rem;
+}
+
+.ops_section img{
+    border: 10px solid var(--secundary-color-hover);
+    position: absolute;
+    width: 25%;
+    top: -15%;
+    object-fit: cover;
+    border-radius: 8rem;
+}
+
+.ops_section p{
+    font-size: 3rem;
+    font-weight: bold;
+}
